@@ -70,7 +70,7 @@ def main_menu():
             pygame.display.update()
 
     # pygame.mixer.music.stop()
-    ready = Sound(path.join(sound_folder, 'getready.ogg'))
+    ready = Sound(path.join(sound_folder, 'getready.m4a'))
     ready.play()
     screen.fill(BLACK)
     draw_text(screen, "GET READY!", 40, WIDTH/2, HEIGHT/2)
