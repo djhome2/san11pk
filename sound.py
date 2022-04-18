@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 #  -*- coding: utf-8 -*-
 from os import path
-from playsound import playsound
-import winsound
-# from pydub.playback import play
-import os
-# import play_mp3
+import subprocess
+
 
 class Sound():
 
@@ -15,7 +12,7 @@ class Sound():
         pass
 
     def play(self):
-        playsound(self.filename)
+        subprocess.Popen(['mplayer', self.filename])
         return
 
 
